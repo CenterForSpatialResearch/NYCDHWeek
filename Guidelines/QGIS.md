@@ -74,7 +74,6 @@ First we will add a basemap of the United States.
 	![Delimited](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Delimited.png)
 	2. Find the city_latlong.csv file
 	3. Select the 'csv' button and make sure that the latitude and longitude columns are the correct ones.
-	
 	4. If you can't see the points or only see one point, double click on the layer and go to General to make sure that it is the same projection as the map (North America Lambert Conformal Conic (EPSG: 102009)).
 	5. If you still can't see them, click on the zoom full magnifying glass (with three arrows pointing outwards), and then zoom back in to the lower 48 states.
 
@@ -90,18 +89,10 @@ First we will add a basemap of the United States.
 	4. Select Fill > Transparent and Border > Solid Line
 	5. Select 'OK' to exit the menu
 
-**Save** your QGIS project by selecting `Project` > `Save`. Name your project Refugee_Cities.qgs and save it in the folder you are using for these tutorials. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
+**Save** your QGIS project by selecting `Project` > `Save`. Name your project Refugee_Cities.qgs and save it in the folder you are using for this tutorial. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
 
 
-# Analyzing Data with QGIS - QGIS Part 2
-
-
-## Premise 
-
-We will work with the basemap we made in Tutorial 3 (QGIS Part 1) and add new data to it in order to examine various demographic features of the cities and states where refugees are resettled. If you have not already completed the [Mapping data 00](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/01_MappingData00.md) tutorial please do so before beginning this exercise. 
-
-
-We will answer a few questions in this tutorial: 
+We are ready to answer a few questions: 
 
 * How many states have populations of greater than two million people? 
 * How many states received more than 300 refugees in 2014? 
@@ -109,7 +100,6 @@ We will answer a few questions in this tutorial:
 
 ## Set Up
 
-Open your Refugee_Cities.qgs map project.
 
 We already mapped the locations of refugee resettlement in the United States as well as state polygons. We have tabular data available for population at the state level from the [United States Census](https://www.census.gov/) in the Data/state_pop.csv file. The city data also has the number of Refugees per city. We will use these two datasets to answer questions about population and refugee resettlement. In the next tutorial, we will use more detailed information about the cities, including income and infrastructure.
 
