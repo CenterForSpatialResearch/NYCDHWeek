@@ -101,30 +101,21 @@ We are ready to answer a few questions:
 ## Set Up
 
 
-We already mapped the locations of refugee resettlement in the United States as well as state polygons. We have tabular data available for population at the state level from the [United States Census](https://www.census.gov/) in the Data/state_pop.csv file. The city data also has the number of Refugees per city. We will use these two datasets to answer questions about population and refugee resettlement. In the next tutorial, we will use more detailed information about the cities, including income and infrastructure.
+We already mapped the locations of refugee resettlement in the United States as well as state polygons. We have tabular data available for population at the state level from the [United States Census](https://www.census.gov/) in the state_pop.csv file. The city data also has the number of Refugees per city. We will use these two datasets to answer questions about population and refugee resettlement. In the next tutorial, we will use more detailed information about the cities, including income and infrastructure.
 
 
 In order to answer these questions we’ll first select just those cities which have populations of more than two million. Then we will export that as a separate layer. 
 
-### Setting up QGIS
-
-
-1. Open your MappingData_Population.qgs file. 
-
-	1. It should still contain the states polygons and cities points we added previously.
-	
-	2. If these layers are not immediately visible then **right click** on the name of either layer in the Layer menu and click Zoom To Layer.
 
 ### Import population information
 
 Now we will add the table containing population by state which we will join to the state polygons. *QGIS can read several types of tabular data formats, including .csv and .xls files. Our total population file is saved an .csv file (note QGIS cannot read .xlsx files).*
 
-
 1. Upload Tabular Data
 	
 	1. Click on the Add Vector Layer button 
 	
-	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source later we will go over how to .csv files which will, more intuitively, be added using the `Add delimited data` button)
+	2. Add the state_pop.csv file. (Note: we realize it is a little bit confusing that we use the `Add vector layer` button in order to add tabular data to our map project however this is somewhat a product of the fact that QGIS is open source).
 	![CSV](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 	
 	3. State_pop should appear in the Layers menu. *Because it is just a table and does not have any geometry, it will not show up in the map view.*
@@ -142,7 +133,7 @@ Now we will add the table containing population by state which we will join to t
 	
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
 	
-	3. Review the fields in the attribute table for the cb_2014_us_state layer, they are: 
+	3. Review the fields in the attribute table for the 2014_Census_State layer, they are: 
 	
 		* STATEFP
 		* STATENS
@@ -154,14 +145,14 @@ Now we will add the table containing population by state which we will join to t
 		* ALAND
 		* AWATER
 
-**Note that NAME is identical to stateName, and each is unique -- no two states have the same name. This unique field common to both datasets is what allows us to join the tabular population data to the vector file describing the geometry of those countries. 
+**Note that NAME is identical to stateName**, and each is unique -- no two states have the same name. This unique field that is common to both datasets is what allows us to join the tabular population data to the vector file describing the geometry of those countries. 
 
 We always start the join on the file that we are joining to. We are joining the population estimates table to the state boundary shapefile. 
 
 
-1. Open the Properties for the cb_2014_us_state layer.
+1. Open the Properties for the 2014_Census_State layer.
 
-2. navigate to “Joins” in the left hand menu. 
+2. Navigate to “Joins” in the left hand menu. 
 
 3. Click the “+” icon. 
 
