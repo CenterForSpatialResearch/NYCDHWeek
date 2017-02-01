@@ -12,7 +12,7 @@ The purpose of this tutorial is to introduce you to the mapping platform, QGIS, 
 * Create a choropleth map
 
 ## Getting Started
-Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/michellejm/ConflictUrbanism_LanguageJustice), select `Download ZIP`. You only need to do this once. The Data folder will then have all of the datasets needed for this tutorial. 
+Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/CenterForSpatialResearch/NYCDHWeek), select `Download ZIP`. You only need to do this once. The Data folder will then have all of the datasets needed for this tutorial. 
 
 ## Mapping Refugee Destinations in the United States
 
@@ -35,9 +35,9 @@ We are interested in creating a map of refugee resettlement in the United States
 
 ![blank](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/01_OpenQGIS.png)
 
-Begin to familiarize yourself with the interface by hovering over the icons to see what they say, . You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/QGIS_InterfaceDescription.md) of the elements of the interface for more information. 
+Begin to familiarize yourself with the interface by hovering over the icons to see what they say. You can also refer to this [brief description](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Resources/QGIS_InterfaceDescription.md) of the elements of the interface for more information. 
 
-##Adding Layers
+## Adding Layers
 
 Maps in QGIS are based on data layers. This system allows you to analyze datasets with respect to each other. We will use two layers with different information. The basemap is polygons representing states in the US. We will layer 
 
@@ -58,18 +58,11 @@ First we will add a basemap of the United States.
 2. In the browser (on the left side of the QGIS window), navigate to where you saved the Data/cb2014 layer. For me, that is here. It may be somewhere else for you. 
 ![layer](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/browserpanel.png)
 
-3. If you just 
-
-
-2. Click on the `Add Vector Layer` button to add the data. 
+3. Click on the `Add Vector Layer` button to add the data. 
 ![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
-
 	1. Add the `cb_2014_us_state.shp` file. Even though we only add this file to the map, QGIS still references the other files (.shx,.dbf,.sbn,.prj). 
-	
 		1. The selected layer will be added in default colors. 
-
 3. This map looks strange because it is in the wrong Coordinate Reference System (CRS). We need to change the projection. Here's a [simple tool](http://projectionwizard.org/) to help you pick a CRS if you ever don't know which one to pick. 
-
 	1. Double click on the layer to change to CRS. We want "North America Lambert Conformal Conic (EPSG: 102009)" (North America Albert would have been OK, too)
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/CRS.png)
 
