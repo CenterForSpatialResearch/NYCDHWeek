@@ -65,48 +65,14 @@ First we will add a basemap of the United States.
 3. This map looks strange because it is in the wrong Coordinate Reference System (CRS). We need to change the projection. Here's a [simple tool](http://projectionwizard.org/) to help you pick a CRS if you ever don't know which one to pick. 
 	1. Double click on the layer to change to CRS. We want "North America Lambert Conformal Conic (EPSG: 102009)" (North America Albert would have been OK, too)
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/CRS.png)
-
 	2. Click on the Render box in the lower right hand. Also change this to "North America Lambert Conformal Conic (EPSG: 102009)"
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.png)
-
-4.  We need to remove these.	
-
-	1. Right click on the map layer and select "Show Feature Count"
-	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featurecount.png)
-
-	2. The number of polygons will appear next to the layer name.
-	
-	3. It should show 56 features, we want 51 polygons (the US plus Washington DC).
-	
-	4. Select the layer (so it is highlighted blue).
-	
-	5. Click on the Edit pencil near the top.
-	![pencil](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/editpencil.png)
-	
-	6. Zoom in to Puerto Rico (using the Magnifying Glass with a + on it)
-	
-	7. Select the 'Select Features by area or single click' button
-	
-	8. Click on Puerto Rico to select it - it will change color
-	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/featuresbyarea.png)
-
-	9. Click on the Trash can on the left side of the toolbar to delete it.
-	
-	10. Repeat for the US Virgin Islands, American Samoa, Guam, and Northern Mariana Islands.
-	
-	11. Recenter the map using the Zoom Full Magnifying Glass (the one with the arrows going out of it) 
-	
-	12. SAVE!
-
 5. Moving Alaska and Hawaii is beyond the scope of this tutorial. 
 
 6. Add the cities layer. 
-
 	1. Add Delimited Text layer
 	![Delimited](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Delimited.png)
-
 	2. Find the city_latlong.csv file
-	
 	3. Select the 'csv' button and make sure that the latitude and longitude columns are the correct ones.
 	
 	4. If you can't see the points or only see one point, double click on the layer and go to General to make sure that it is the same projection as the map (North America Lambert Conformal Conic (EPSG: 102009)).
