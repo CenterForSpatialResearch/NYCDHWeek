@@ -8,6 +8,7 @@ The purpose of this tutorial is to introduce you to the mapping platform, QGIS, 
 * Add a vector layer
 * Upload a dataset to QGIS 
 * Join datasets based on a shared identifier
+* Join datasets based on a shared location
 * Query a dataset based on a feature
 * Create a choropleth map
 
@@ -128,7 +129,7 @@ Now we will add the table containing population by state which we will join to t
 
 2. Perform a Table Join *A table join allows GIS users to combine tabular data with vector data based on an identical field in their attribute tables.*
 
-	1. **Right-click** cb_2014_us_state in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
+	1. **Right-click** 2014_Census_State in the layer menu and select `Open Attribute Table`. This describes the data associated with each feature in the feature class.
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/attribtable.png)
 	
 	2. To join attributes from a table to a shapefile the two data sets must share a common attribute field. 
@@ -163,7 +164,7 @@ We always start the join on the file that we are joining to. We are joining the 
 	
 	2. join field = stateName
 	
-	3. target field = NAME which matches the join field in the cb_2014_us_state layer.
+	3. target field = NAME which matches the join field in the 2014_Census_State layer.
 	
 	4. **Click** `OK` to close the join dialogue. 
 	
@@ -172,7 +173,7 @@ We always start the join on the file that we are joining to. We are joining the 
 5. Open the attribute table for the countries shapefile. A new field has been joined to the right hand side of the table: state_pop_population
 IMPORTANT!! This joined data is not permanently associated with its attribute table. The relationship only exists within this QGIS project. If we added the cb_2014_us_state layer to another QGIS project the fields we joined from the population estimates would not be there. To permanently incorporate the join, we must save a new version of the shapefile.
 
-6. **Right-click** on the cb_2014_us_state layer and select Save.
+6. **Right-click** on the 2014_Census_State layer and select Save.
 
 7. Select `ESRI Shapefile` as the format, and save your file in the same folder as the project folder as stateboundaries_pop.shp. 
 
@@ -192,7 +193,7 @@ There are multiple routes to select features within a dataset. We will follow on
 3. If you click on any of the terms in the central box a description of it will appear on the right. We will combine the field name with other operators to build an expression on the left side.
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectfeaturesscreen.png)
 
-4. Expand 'Fields and Values and select state_pop
+4. Expand `Fields and Values` and select 'state_pop'
 ![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/selectstatepop.png)
 
 5. **Double-click**  on `state_pop` and it will appear in the expression box on the right. 
@@ -214,7 +215,7 @@ There are multiple routes to select features within a dataset. We will follow on
 
 ## Refugees per state
 
-Now we need to create a layer that will tell us how many refugees went to each state. our city_latlong file has the number of individuals in it. To count the number of individuals per state, we will join the city_latlong to stateboundaries_pop based on their shared location, and then sum the 'Individuals' column.
+Now we need to create a layer that will tell us how many refugees went to each state. Our city_latlong file has the number of individuals in it. To count the number of individuals per state, we will join the city_latlong to stateboundaries_pop based on their shared location, and then sum the 'Individuals' column.
 
 1. Select the stateboundaries_pop layer
 
@@ -234,11 +235,13 @@ Now we need to create a layer that will tell us how many refugees went to each s
 
 8. Click on that row (by clicking on the number on the far left). Move the attribute table out of the way so you can see the map again. That state should be highlighted. You can select multiple rows by holding the "Command" button and clicking on the rows you are interested in.
 
-9. Close the attribute table and Deselect Features from All layers
+9. Close the attribute table and 'Deselect Features' from 'All layers'
 ![features](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/deselect.png)
 
 10. Select the `select features using an expression` tool. We will again select by expression in order to select the states with greater than 300 refugees. Use the expression builder as we did above to select the states. Your expression should read:  `"SUMIndividuals"  > 300`
+
 The footer bar of the map will indicate that 14 features were selected. 
+
 Use this selection to identify which states of greater than 300 refugees are within countries with fewer than ten million people. Use the expression builder to figure out which 6 states have these two characteristics. *Hint: You will need to use 'AND'*
 
 11. SAVE your project
@@ -286,14 +289,14 @@ In order to present this map, we will now compose a map layout and become famili
 
 4. Add a legend. 
 
-	1. Select Add new legend. 
+	1. Select 'Add New Legend'. 
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/addlegend.png)
 
 	2. Again click to draw a rectangle where you would like to place the legend. An unformatted legend that matches the information from the Layers panel will appear. 
 	
 	3. Use the options in the Item Properties tab to change which layers are represented in the legend and to change the labeling of the layers in the legend.
 	
-	4. Select the 'Item Properties Tab
+	4. Select the 'Item Properties' Tab
 	
 	5. Unselect 'Auto Update'
 	![feature](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/itemproperties.png)
@@ -324,8 +327,7 @@ In order to present this map, we will now compose a map layout and become famili
 
 ______________________________________________________________________________________________________________
 
-This tutorial was prepared by Michelle McSweeney for the Conflict Urbanism: Language Justice Course offered by the [Center for Spatial Research](http://c4sr.columbia.edu) at Columbia University in Spring 2017. 
-It is based on the tutorial written by Dare Brawley, for *Mapping for the Urban Humanities* taught in Summer 2016 also by the [Center for Spatial Research](http://c4sr.columbia.edu).
+This tutorial was prepared by Michelle McSweeney for the NYCDH Week. It is based on the tutorial written by Dare Brawley, for *Mapping for the Urban Humanities* taught in Summer 2016 also by the [Center for Spatial Research](http://c4sr.columbia.edu).
 
 
 
