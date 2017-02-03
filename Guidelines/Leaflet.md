@@ -32,7 +32,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 1. open Command Prompt
 2. type python --version hit 'Return'
 	* if python is installed something like this will appear
-	![img](img/pythontest.png)
+	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/pythontest.png)
 	* if it isn't then a message stating that will appear
 	* if Python is installed make note of which version you have installed, you will need it later
 3. if python is not installed then go to [python.org](python.org) to download python. We recommend installing version 2.7. 
@@ -90,7 +90,7 @@ We will run a local server from our computers. The details of this are far beyon
 
 We will come back to this.
 
-(Windows) Set up a local server
+###(Windows) Set up a local server
 1. Open Command Prompt. Then navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in root > leaflet > leafletmap. To navigate there, I type the following commands:
 
 	* cd leaflet
@@ -105,7 +105,7 @@ We will come back to this.
 	* python -m http.server
 
 	It will look something like this:
-	![img](img/localhost.png)
+	![img](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/localhost.png)
 3. Return to your browser window (Chrome, Firefox, or Safari) and type `http:\\localhost` in the navigation bar. You should see an empty webpage.
 
 We will come back to this.
