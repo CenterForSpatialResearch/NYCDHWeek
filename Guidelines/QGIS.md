@@ -40,7 +40,7 @@ Begin to familiarize yourself with the interface by hovering over the icons to s
 
 ## Adding Layers
 
-Maps in QGIS are based on data layers. This system allows you to analyze datasets with respect to each other. We will use two layers with different information. The basemap is polygons representing states in the US. We will layer 
+Maps in QGIS are based on data layers. This system allows you to analyze datasets with respect to each other. We will use two layers with different information. The basemap is polygons representing states in the US. 
 
 First we will add a basemap of the United States. 
 1. Go to the Data/cb2014 folder. This folder contains all the files QGIS needs to make an outline of the United States. 
@@ -242,7 +242,7 @@ Now we need to create a layer that will tell us how many refugees went to each s
 
 The footer bar of the map will indicate that 14 features were selected. 
 
-Use this selection to identify which states of greater than 300 refugees are within countries with fewer than ten million people. Use the expression builder to figure out which 6 states have these two characteristics. *Hint: You will need to use 'AND'*
+Use this selection to identify which states have recieved more than 300 refugees but have a total population of fewer than ten million people. Use the expression builder to figure out which 6 states have these two characteristics. *Hint: You will need to use 'AND'*
 
 11. SAVE your project
 
