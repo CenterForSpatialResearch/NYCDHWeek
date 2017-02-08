@@ -57,10 +57,10 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 	1. Take the css file out of this folder and put it in the css folder
 	2. Move the leaflet folder into the js folder
 	
-3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). (If using Firefox, copy/paste the code into a text editor and save it in the js folder as jquery-2.1.1.min.js). If using Safari or Chrome, just save the file in the js folder. If you use javascript, and would prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
-4. Download the [font awesome library](http://fontawesome.io/) Move the entire fontawesome folder into your **css** folder.
-5. Download the [leaflet-font awesome extension files](https://github.com/lvoogdt/Leaflet.awesome-markers/tree/2.0/develop/dist). You need BOTH the css and the js file (the js can be the min file or the regular one). Save these in their respective files (css and js). 
-6. Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
+3. Download [jQuery](http://code.jquery.com/jquery-2.1.1.min.js). Depending on your browser: If using Firefox, right-click (command+Click) to save. If using Safari or Chrome, just save the file in the js folder as you normally would. OR copy/paste the code into a text editor and save this file as jquery-2.1.1.min.js). If you use javascript, and would prefer to work with the [jQuery](http://jquery.com/download/) site, be sure to make a note of which version you downloaded. The examples here use 2.1.1
+4. Download the [font awesome library](http://fontawesome.io/) Move the entire fontawesome FOLDER into your **css** folder.
+5. Download the [leaflet-font awesome extension files](https://github.com/lvoogdt/Leaflet.awesome-markers/tree/2.0/develop/dist). You need BOTH the css and the js file (the js can be the min file or the regular one). To save, slect 'View Raw' and save as you did the jQuery. Make sure you have the right extension (i.e., "leaflet.awesome-markers.css" and "leaflet.awesome-markers.js" NOT ".txt"Save these in their respective files (css and js). 
+6. Open a Text Editor (Text Wrangler, Sublime, Notepad, TextEdit, etc.) Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
 
 Your directory should look like this:
 ![directory](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/directory.png)
