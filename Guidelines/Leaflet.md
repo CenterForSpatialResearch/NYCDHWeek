@@ -23,6 +23,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 ### (Mac) Check which Python version you have (if any)
 
 1. Open a Terminal Window 
+![terminal](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/terminal.png)
 2. Type `$ python -V` hit 'Return'
 3. Something like this should appear. 
 ![python](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/pythonv.png)
