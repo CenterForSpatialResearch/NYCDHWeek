@@ -157,8 +157,8 @@ What are tiles?
 ### Collect the ingredients
 
 1. Open QGIS
-2. Reopen your saved project from the QGIS Tutorial (This may be called Refugee_Cities)
-4. Right click on the layer that has the latitude/longitude of the cities in it. 
+2. Reopen your saved project from the QGIS Tutorial or the QGIS project in the data file you downloaded from GitHub (Data/Shape/states_refugee.shp)
+4. Right click on the layer that appears (it has the latitude/longitude of the cities in it).
 5. Select Save As >> GeoJson *remember to save this layer into your leafletmap/data folder!* (I like to deselect `add layer to current project` because I think it is confusing to have so many layers.)
 	1. set the CRS to EPSG 4326 (WGS 84)
 6. Right click on the layer with citystaterefugees in it and Select Save As >> GeoJson and set the CSR to EPSG 4326 (WGS 84)
