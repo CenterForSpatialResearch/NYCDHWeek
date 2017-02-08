@@ -62,7 +62,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 4. Download the [font awesome library](http://fontawesome.io/) Move the entire fontawesome FOLDER into your **css** folder.
 5. Download the [leaflet-font awesome extension files](https://github.com/lvoogdt/Leaflet.awesome-markers/tree/2.0/develop/dist). You need BOTH the css and the js file (the js can be the min file or the regular one). To save, slect 'View Raw' and save as you did the jQuery. Make sure you have the right extension (i.e., "leaflet.awesome-markers.css" and "leaflet.awesome-markers.js" NOT ".txt"Save these in their respective files (css and js). 
 6. Download the data for this tutorial (which includes the basemap you need) by clicking on the green 'Download Zip'. If you were here yesterday, you already have this data.
-![image)(https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/greendownload.png)
+![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/greendownload.png)
 6. Open a Text Editor (Text Wrangler, Sublime, Notepad, TextEdit, etc.) Make an empty html file and save it in the leafletmap folder (not in a subfolder). I call this file "index.html" because it is convention in web development and the index file is loaded first from a directory.
 
 Your directory should look like this:
