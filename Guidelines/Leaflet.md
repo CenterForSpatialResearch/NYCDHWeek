@@ -46,7 +46,7 @@ For this tutorial, you need to have Python installed. Check if you have Python i
 
 ### Get Organized
 
-1. Create a folder for this project. Everything that you do in this tutorial must go in this folder. I'm going to call my folder 'leafletmap'. Make a note of where you put this folder. For me, it's in Dropbox, you might want to put it somewhere else.
+1. Create a folder for this project. Everything that you do in this tutorial must go in this folder. I'm going to call my folder 'leafletmap'. Make a note of where you put this folder. For me, it's on the Desktop, you might want to put it somewhere else.
 	1. Create subfolders in that folder. Call them:
 		1. **css** *put css files here*
 		2. **data** *put data files here*
@@ -70,9 +70,9 @@ Your directory should look like this:
 
 We will run a local server from our computers. The details of this are far beyond this tutorial, for more on  the technical details, visit the [Mozilla Developer site](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Set_up_a_basic_working_environment). For more on how the web works the difference between a local and remote server, [read this](https://devdojo.com/blog/technology/local-vs-remote-servers).
 
-1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Dropbox > learnleaflet > public. To navigate there, I type the following commands (don't type the $, that just indicates that you are in the Terminal):
+1. In a Terminal window, navigate to the folder where you have saved your html file (directions below on how to "navigate"). In my case it is in Desktop > learnleaflet > public. To navigate there, I type the following commands (don't type the $, that just indicates that you are in the Terminal):
 
-	* `$ cd Dropbox`
+	* `$ cd Desktop`
 	* `$ cd learnleaftlet` 
 	* `$ cd public`
 	
