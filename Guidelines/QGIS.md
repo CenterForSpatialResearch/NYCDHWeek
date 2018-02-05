@@ -64,16 +64,16 @@ First we will add a basemap of the United States.
 
 ![vector](https://github.com/CenterForSpatialResearch/MappingForTheUrbanHumanities/blob/master/Tutorials/Images/MappingData01/02_Adding_Layers_Vector.png)
 
-	1. Add the `cb_2014_us_state.shp` file. Even though we only add this file to the map, QGIS still references the other files (.shx,.dbf,.sbn,.prj). 
-		1. The selected layer will be added in default colors. 
-3. This map looks strange because it is in the wrong Coordinate Reference System (CRS). We need to change the projection. Here's a [simple tool](http://projectionwizard.org/) to help you pick a CRS if you ever don't know which one to pick. 
+
+4. Add the `cb_2014_us_state.shp` file. Even though we only add this file to the map, QGIS still references the other files (.shx,.dbf,.sbn,.prj).  The selected layer will be added in default colors. 
+5. This map looks strange because it is in the wrong Coordinate Reference System (CRS). We need to change the projection. Here's a [simple tool](http://projectionwizard.org/) to help you pick a CRS if you ever don't know which one to pick. 
 	1. Double click on the layer to change to CRS. We want "North America Lambert Conformal Conic (EPSG: 102009)" (North America Albert would have been OK, too)
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/CRS.png)
 	2. Click on the Render box in the lower right hand. Also change this to "North America Lambert Conformal Conic (EPSG: 102009)"
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.png)
-5. Moving Alaska and Hawaii is beyond the scope of this tutorial. 
+6. Moving Alaska and Hawaii is beyond the scope of this tutorial. 
 
-6. Add the cities layer. 
+7. Add the cities layer. 
 	1. Add Delimited Text layer
 	![Delimited](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Delimited.png)
 	2. Find the city_latlong.csv file
@@ -81,11 +81,11 @@ First we will add a basemap of the United States.
 	4. If you can't see the points or only see one point, double click on the layer and go to General to make sure that it is the same projection as the map (North America Lambert Conformal Conic (EPSG: 102009)).
 	5. If you still can't see them, click on the zoom full magnifying glass (with three arrows pointing outwards), and then zoom back in to the lower 48 states.
 
-7. Moving Layers
+8. Moving Layers
 
 	1. Click and drag the states layer on top of the cities layer. The cities points are no longer visible because they are behind the states polygons. 
 
-8. It might be easier to look at if we use state outlines rather than filled polygons. To do this, we must change the **style** of the data layer. 
+9. It might be easier to look at if we use state outlines rather than filled polygons. To do this, we must change the **style** of the data layer. 
 
 	1. Double click on the layer name.
 	2. The properties box will appear, select the 'Style' tab on the left
