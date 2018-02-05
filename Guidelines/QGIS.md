@@ -13,11 +13,11 @@ The purpose of this tutorial is to introduce you to the mapping platform, QGIS, 
 * Create a choropleth map
 
 ## Getting Started
-Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/CenterForSpatialResearch/NYCDHWeek), select `Download ZIP`. You only need to do this once. The Data folder will then have all of the datasets needed for this tutorial. 
+Download the GitHub repository for the tutorials. Using the green button [here](https://github.com/CenterForSpatialResearch/NYCDHWeek), select `Download ZIP`. You only need to do this once. The Data folder will then have all of the datasets needed for this tutorial. You may want to move this folder to your Desktop or somewhere else you will be able to find it.
 
 ## Mapping Refugee Destinations in the United States
 
-This mapping project is based on recent [discussions](https://www.thisamericanlife.org/radio-archives/episode/600/will-i-know-anyone-at-this-party?act=1") about Refugees in the United States, research on language maintenance and English acquisition by refugees in the [Twin Cities Metropolitan Area](http://onlinelibrary.wiley.com/doi/10.1111/j.0020-7985.2003.00262.x/full) (Fennelley and Palasz, 2003) and the shift in the early 2000's away from refugees being resettled in larger cities towards smaller and mid-sized cities. We are interested in this topic because Refugees in the US tend to speak less common languages (i.e., not English, Spanish, or Chinese), and tend to settle in small enclaves. Unlike other immigrant groups, refugees tend to have less academic and linguistic preparation before arriving in the US and because of a variety of factors, rarely have the opportunity to, or other adult learning opportunities (for more about Refugees in the US, visit [Office of Refugee Services](http://www.acf.hhs.gov/orr).
+This mapping project is based on recent [discussions](https://www.thisamericanlife.org/radio-archives/episode/600/will-i-know-anyone-at-this-party?act=1") about Refugees in the United States, research on language maintenance and English acquisition by refugees in the [Twin Cities Metropolitan Area](http://onlinelibrary.wiley.com/doi/10.1111/j.0020-7985.2003.00262.x/full) (Fennelley and Palasz, 2003) and the shift in the early 2000's away from refugees being resettled in larger cities towards smaller and mid-sized cities. We are interested in this topic because Refugees in the US tend to speak less common languages (i.e., not English, Spanish, or Chinese), and tend to settle in small enclaves. Unlike other immigrant groups, refugees tend to have less academic and linguistic preparation before arriving in the US and because of a variety of factors, rarely have the opportunity to (for more about Refugees in the US, visit [Office of Refugee Services](http://www.acf.hhs.gov/orr).
 
 We are interested in creating a map of refugee resettlement in the United States (and at the same time exploring the QGIS interface). We have a point file for the cities refugees go when they arrive in the United States (from the [Refugee Processing Center](http://www.wrapsnet.org/Reports/InteractiveReporting/tabid/393/EnumType/Report/Default.aspx?ItemPath=/rpt_WebArrivalsReports/MX%20-%20Arrivals%20by%20Destination%20and%20Nationality)) and a polygon file for state boundaries. This map will serve as a basemap to which we can add additional information and layers in order to better understand refugee resettlement in the United States.
 
@@ -56,7 +56,7 @@ First we will add a basemap of the United States.
 		* For more information on these extensions and others see [this explanation by ESRI](http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=Shapefile_file_extensions).
 		
 		
-2. In the browser (on the left side of the QGIS window), navigate to where you saved the Data/cb2014 layer. For me, that is here. It may be somewhere else for you. 
+2. In the browser (on the left side of the QGIS window), navigate to where you saved the Data/cb2014 layer. For me, that is in Desktop>>nycdhweek18>>Data. It may be somewhere else for you. 
 ![layer](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/ex1.png)
 
 3. Click on the `Add Vector Layer` button to add the data. 
