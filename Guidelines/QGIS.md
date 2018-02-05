@@ -66,17 +66,19 @@ First we will add a basemap of the United States.
 
 
 4. Add the `cb_2014_us_state.shp` file. Even though we only add this file to the map, QGIS still references the other files (.shx,.dbf,.sbn,.prj).  The selected layer will be added in default colors. 
-5. This map looks strange because it is in the wrong Coordinate Reference System (CRS). We need to change the projection. Here's a [simple tool](http://projectionwizard.org/) to help you pick a CRS if you ever don't know which one to pick. 
+5. Change the Coordinate Reference System (CRS). We need to change the projection. Here's a [simple tool](http://projectionwizard.org/) to help you pick a CRS if you ever don't know which one to pick. 
 	1. Double click on the layer to change to CRS. We want "North America Lambert Conformal Conic (EPSG: 102009)" (North America Albert would have been OK, too)
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/CRS.png)
-	2. Click on the Render box in the lower right hand. Also change this to "North America Lambert Conformal Conic (EPSG: 102009)"
+	2. Click on the Render box in the lower right hand. **Also** change this to "North America Lambert Conformal Conic (EPSG: 102009)"
 	![image](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/projection.png)
+	3. Turn **OFF** "enable on the fly CRS tranformations"
+	![image](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/ex4.png)
 6. Moving Alaska and Hawaii is beyond the scope of this tutorial. 
 
 7. Add the cities layer. 
 	1. Add Delimited Text layer
 	![Delimited](https://github.com/michellejm/ConflictUrbanism_LanguageJustice/blob/master/Images/Delimited.png)
-	2. Find the city_latlong.csv file
+	2. Find the city_latlong.csv file in the Data Folder you downloaded from GitHub
 	3. Select the 'csv' button and make sure that the latitude and longitude columns are the correct ones.
 	4. If you can't see the points or only see one point, double click on the layer and go to General to make sure that it is the same projection as the map (North America Lambert Conformal Conic (EPSG: 102009)).
 	5. If you still can't see them, click on the zoom full magnifying glass (with three arrows pointing outwards), and then zoom back in to the lower 48 states.
