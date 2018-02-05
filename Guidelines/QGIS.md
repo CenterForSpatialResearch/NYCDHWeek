@@ -82,6 +82,7 @@ First we will add a basemap of the United States.
 	3. Select the 'csv' button and make sure that the latitude and longitude columns are the correct ones.
 	4. If you can't see the points or only see one point, double click on the layer and go to General to make sure that it is the same projection as the map (North America Lambert Conformal Conic (EPSG: 102009)).
 	5. If you still can't see them, click on the zoom full magnifying glass (with three arrows pointing outwards), and then zoom back in to the lower 48 states.
+	![image](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/ex5.png)
 
 8. Moving Layers
 
@@ -94,7 +95,8 @@ First we will add a basemap of the United States.
 	3. Click on Fill > Simple Fill
 	4. Select Fill > Transparent and Border > Solid Line
 	5. Select 'OK' to exit the menu
-
+	![image](https://github.com/CenterForSpatialResearch/NYCDHWeek/blob/master/Images/ex6.png)
+	
 **Save** your QGIS project by selecting `Project` > `Save`. Name your project Refugee_Cities.qgs and save it in the folder you are using for this tutorial. QGIS projects are saved as .qgs files. It is important to note that the data layers are not saved with it the map project but are rather linked to the project.
 
 
